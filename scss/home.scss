@@ -1,9 +1,6 @@
 /** ohmyfood homepage scss **/
 @import 'config';
 
-html, body { 
-    @include reset; } 
-
 /** loading screen **/
 .loader-container {
     @include hide-loader-animation;
