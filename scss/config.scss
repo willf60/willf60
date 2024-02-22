@@ -35,7 +35,8 @@ $fonts: (
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; }
+    overflow-x: hidden;
+    overflow-y: scroll;}
 
 /** button mixins **/
 @mixin remove-button-style {
@@ -109,7 +110,7 @@ $fonts: (
     100% {
         display: none;
         opacity: 0;
-        overflow-x: visible; } }
+        overflow: visible; } }
 
 /** for menu item tick container**/
 @mixin slide-left-animation {
