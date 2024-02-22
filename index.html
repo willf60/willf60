@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ohmyfood</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="dist/css/main.css">
+    <link rel="stylesheet" type="text/css" href="dist/css/home.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,100italic,300italic,400italic,500italic,500,700,700italic,900,900italic%7CShrikhand">
+</head>
+
+<body>
+    <header>
+        <nav class = logo-container>
+            <a href="index.html" class = "return-button"><i class="fa-xl fa-solid fa-arrow-up" aria-hidden="true"></i></a>
+            <img class = "logo" src="images/logo/ohmyfood@2x.svg" alt="Ohmyfood Logo">
+        </nav>
+    </header>
+   <!-- loader  -->
+    <div class="loader-container">
+        <img class = "loader-logo" src="images/logo/ohmyfood@2x.svg" alt="Ohmyfood Logo">
+        <div class="loader-slogan">Finding the best restaurants for you</div>
+    </div>
+    <!-- user location  -->
+    <section class = "chosen-location">
+        <i class = "fas fa-map-marker-alt"></i>
+        <div class = "location"> Islington, London</div>
+    </section>
+
+    <!-- company info -->
+    <section class = slogan-and-explore>
+        <div class = "slogan-big"> Book the meal you want </div>
+        <div class = "slogan-small"> Discover our carefully selected high-end restaurants</div>
+        <button class = "btn"> Explore our restaurants</button>
+    </section>
+
+    <!-- how to use the site  -->
+    <section class = "instructions-section">
+        <div class = steps-master-container>
+            <h2 class = "instructions-title" > How it works</h2>
+            <div class = step-number-and-text-container>
+                <div class = "step-number"> 1</div>
+                <div class = "step-content-container">
+                    <i class = "fa-solid fa-mobile"></i>
+                    <div class = "step-text"> Choose a restaurant</div>
+                </div>
+            </div>
+            <div class = step-number-and-text-container>
+                <div class = "step-number"> 2</div>
+                <div class = "step-content-container">
+                    <i class = "fa-solid fa-list"></i>
+                    <div class = "step-text"> Build your meal</div>
+                </div>
+            </div>
+            <div class = step-number-and-text-container>
+                <div class = "step-number"> 3</div>
+                <div class = "step-content-container">
+                    <i class = "fa-solid fa-shop"></i>
+                    <div class = "step-text"> Enjoy your meal at the restaurant</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- available restaurants  -->
+    <section class = "restaurants"> <!--container for entire restaurant section-->
+        <div class = "restaurants-master-container"> <!--container for 4 restaurant cards-->
+            <h2 class = "restaurants-title">Restaurants</h2> 
+            <a href="kitchen-west.html" class = "card-container"><!--one of four card containers-->
+                <div class = "card-topsection">
+                    <img class = "restaurant-img" src = "images/restaurants/kitchen-west.jpg" alt = "Ham hock terrine prepared by Kitchen West"> <!--card image-->
+                    <span class = "new-tag"> New</span> <!-- new restaurant tag  -->
+                </div>
+                <div class = "restaurant-card-subsection"> <!--container for card details and heart btn-->
+                     <div class = "restaurant-card-info"> <!--container for name and place-->
+                        <div class = "card-restaurant-name">Kitchen West</div> 
+                        <div class = "card-restaurant-location">Angel</div>
+                    </div>
+                    <i class = "fa-regular fa-heart"></i>
+                </div>
+            </a>   <!--above is repeated four times-->
+            <a href="elderflower.html" class = "card-container">
+                <div class = "card-topsection">
+                    <img class = "restaurant-img" src = "images/restaurants/elderflower.jpg" alt = "Ham hock terrine prepared by Kitchen West"> <!--card image-->
+                    <div class = "new-tag"> New</div>
+                </div>
+                <div class = "restaurant-card-subsection"> 
+                     <div class = "restaurant-card-info"> 
+                        <div class = "card-restaurant-name">Elderflower</div> 
+                        <div class = "card-restaurant-location">Old Street</div>
+                    </div>
+                    <i class = "fa-regular fa-heart"></i>
+                </div>
+            </a> 
+            <a href="shoreditch-canteen.html" class = "card-container">
+                <div class = "card-topsection">
+                    <img class = "restaurant-img" src = "images/restaurants/shoreditch-canteen.jpg" alt = "Ham hock terrine prepared by Kitchen West"> <!--card image-->
+                </div>
+                <div class = "restaurant-card-subsection"> 
+                     <div class = "restaurant-card-info"> 
+                        <div class = "card-restaurant-name">Shoreditch Canteen</div> 
+                        <div class = "card-restaurant-location">Shoreditch</div>
+                    </div>
+                    <i class = "fa-regular fa-heart"></i>
+                </div>
+            </a> 
+            <a href="the-bay-leaf.html" class = "card-container">
+                <div class = "card-topsection">
+                    <img class = "restaurant-img" src = "images/restaurants/the-bay-leaf.jpg" alt = "Ham hock terrine prepared by Kitchen West"> <!--card image-->
+                </div>
+                <div class = "restaurant-card-subsection"> 
+                     <div class = "restaurant-card-info"> 
+                        <div class = "card-restaurant-name">The Bay Leaf</div> 
+                        <div class = "card-restaurant-location">Hoxton</div>
+                    </div>
+                    <i class = "fa-regular fa-heart"></i>
+                </div>
+            </a> 
+        </div>
+    </section>
+        
+    <footer>
+        <div class = "footer-content">
+            <img class = "footer-logo" src="images/logo/ohmyfood@2x.svg" alt="Ohmyfood Logo">
+            <div class = footer-line><i class="fa-sm fa-solid fa-cutlery" aria-hidden="true"></i>Suggest a restaurant</div>
+            <div class = footer-line><i class="fa-xs fa-solid fa-handshake" aria-hidden="true"></i>Become a partner</div>
+            <div class = footer-line>Legal notice </div>
+            <a href="mailto:wda459@gmail.com" class="email-button">Contact Us</a> <!-- link for sending email  -->
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/55c89e1335.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
