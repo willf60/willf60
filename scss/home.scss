@@ -1,9 +1,10 @@
 /** ohmyfood homepage scss **/
 @import 'config';
 
-.body-mobile-wrapper {
-    @include reset; }
-    
+html, body { 
+    @include reset;
+    overflow-x: hidden; } 
+
 /** loading screen **/
 .loader-container {
     @include hide-loader-animation;
@@ -219,7 +220,7 @@ header {
     font-family: font(text);
     font-size: 14px;
     font-weight: 550;
-    overflow-x: hidden;
+    overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap; }
 

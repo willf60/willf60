@@ -4,7 +4,7 @@
 html {
     background:color(backdrop); }
 
-html, body {
+body {
     @include reset; }
 
 header {
