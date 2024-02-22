@@ -2,7 +2,8 @@
 @import 'config';
 
 html, body { 
-    @include reset; } 
+    @include reset;
+    overflow-x: hidden; } 
 
 /** loading screen **/
 .loader-container {
