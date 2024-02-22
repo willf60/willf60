@@ -34,7 +34,8 @@ $fonts: (
     width: 100%;
     height: 100%;
     margin: 0px;
-    padding: 0px; }
+    padding: 0px;
+    overflow-x: hidden; }
 
 /** button mixins **/
 @mixin remove-button-style {
@@ -85,16 +86,6 @@ $fonts: (
 /** animations + animation mixins **/
 
 /** loader **/
-@mixin loader-overflow-control {
-    animation: loader 3s linear; }
-
-@keyframes overflow-control {
-    0% {
-      overflow-x: hidden; }
-
-    100% {
-      overflow-x: visible; } }
-
 @mixin loader-animation {
     animation: loader 3s linear; }
 

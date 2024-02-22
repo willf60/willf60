@@ -2,8 +2,7 @@
 @import 'config';
 
 html, body { 
-    @include reset;
-    @include overflow-control; } 
+    @include reset; } 
 
 /** loading screen **/
 .loader-container {
