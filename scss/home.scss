@@ -2,8 +2,7 @@
 @import 'config';
 
 html, body { 
-    @include reset;
-    overflow-x: hidden; } 
+    @include reset; } 
 
 /** loading screen **/
 .loader-container {
@@ -12,7 +11,8 @@ html, body {
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    inset: 0;
+    height: 100%;
+    width: 100%;
     justify-content: center;
     position: absolute;
     z-index: 1; }
