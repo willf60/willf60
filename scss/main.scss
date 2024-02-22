@@ -1,0 +1,112 @@
+/** universal scss **/
+@import 'config';
+
+html {
+    background:color(backdrop); }
+
+body {
+    @include reset; }
+
+header {
+    @include flexCenter(row);
+    @include fade-in-animation;
+    background: white;
+    height: 35px;
+    padding: 20px 50px 10px 10px;
+    position: relative;
+    z-index: 1; }
+
+.return-button {
+    @include flexCenter(row);
+    @include remove-button-style;
+    color: #101010;
+    position: absolute;
+    rotate: 270deg;
+    scale: 0.9;
+    left: 20px;
+    top: 35px; 
+    &:hover {
+        color: color(primary);
+    } }
+
+.logo {
+    height: 27px; }
+
+.btn {
+    @include button-gradient-background;
+    @include btn-static;
+    cursor: pointer;
+    &:hover{
+        @include btn-hover-effect } }
+
+footer {
+    @include reset; 
+    background: color(footer-backdrop);
+    height: auto;
+    position: relative;
+ }
+
+.footer-logo {
+    @include whiteFilter;
+    height: 16px;
+    position: absolute;
+    padding-left: 5px;
+    transform: translateY(-30px); }
+
+.footer-content {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    font-family: font(text);
+    font-size: 15px;
+    font-weight: 350;
+    max-width: 769px;
+    padding: 60px 20px 20px 20px; }
+
+.footer-line {
+    padding: 3px;
+    cursor: pointer;
+    &:hover {
+        font-weight: bold; } }
+
+.email-button {
+    @include remove-button-style;
+    padding-left: 3px;
+    &:hover {
+        font-weight: bold; } }
+
+.fa-cutlery {
+    padding-right: 12px; }
+
+.fa-handshake {
+    padding-right: 10px;
+    rotate: 315deg; }
+    
+@media screen and (min-width: 769px) {
+    .footer {
+        justify-content: flex-end;
+        flex-direction: row; }
+
+    .footer-content {
+        justify-content: flex-end;
+        flex-direction: row; 
+        float: right;
+        gap: 20px;
+        margin-right: 60px;
+        padding: 50px 0 30px 0;
+        width: 100%; }
+
+    .footer-logo {
+        position: relative;
+        padding: 34px 0 0 30px; }
+
+    .footer-logo:nth-child(1) {
+        order: 5; }
+    
+    .fa-handshake {
+        padding-left: 8px; }
+        
+    .email-button {
+        padding-top: 3px; } } 
+
