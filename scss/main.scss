@@ -4,6 +4,8 @@
 html {
     background:color(backdrop); }
 
+body {
+    @include reset; }
 
 header {
     @include flexCenter(row);
