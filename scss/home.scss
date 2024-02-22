@@ -3,7 +3,7 @@
 
 html, body { 
     @include reset;
-    overflow-x: hidden; } 
+    @include overflow-control; } 
 
 /** loading screen **/
 .loader-container {
