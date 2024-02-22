@@ -1,0 +1,83 @@
+/** colors array/call function **/
+/** fonts array/call function **/
+/** mixins **/
+/** white filter for logo in footer **/
+/** reset page margins **/
+/** button mixins **/
+/** text formatting mixins **/
+/** animations + animation mixins **/
+/** loader **/
+@keyframes loader {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
+@keyframes hide-loader {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    display: none;
+    opacity: 0;
+  }
+}
+/** for menu item tick container**/
+@keyframes slide-left {
+  from {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  to {
+    opacity: 100%;
+    transform: translateX(0px);
+  }
+}
+/** for menu item tick **/
+@keyframes rotate {
+  from {
+    transform: rotate(45deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+/** for starters, mains, and dessert loading times**/
+/** for header + starters, mains, desserts**/
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px) scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+    visibility: visible;
+  }
+}
+/** for heart button**/
+@keyframes heart-beat {
+  0% {
+    font-size: 1.5rem;
+  }
+  50% {
+    font-size: 1.7rem;
+  }
+  100% {
+    font-size: 1.5rem;
+  }
+}
+/** for restaurant image**/
+@keyframes image-load {
+  0% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}/*# sourceMappingURL=config.css.map */

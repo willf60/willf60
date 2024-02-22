@@ -1,0 +1,299 @@
+/** restaurant page scss **/
+/** colors array/call function **/
+/** fonts array/call function **/
+/** mixins **/
+/** white filter for logo in footer **/
+/** reset page margins **/
+/** button mixins **/
+/** text formatting mixins **/
+/** animations + animation mixins **/
+/** loader **/
+@keyframes loader {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
+@keyframes hide-loader {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    display: none;
+    opacity: 0;
+  }
+}
+/** for menu item tick container**/
+@keyframes slide-left {
+  from {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  to {
+    opacity: 100%;
+    transform: translateX(0px);
+  }
+}
+/** for menu item tick **/
+@keyframes rotate {
+  from {
+    transform: rotate(45deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+/** for starters, mains, and dessert loading times**/
+/** for header + starters, mains, desserts**/
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px) scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+    visibility: visible;
+  }
+}
+/** for heart button**/
+@keyframes heart-beat {
+  0% {
+    font-size: 1.5rem;
+  }
+  50% {
+    font-size: 1.7rem;
+  }
+  100% {
+    font-size: 1.5rem;
+  }
+}
+/** for restaurant image**/
+@keyframes image-load {
+  0% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.logo {
+  padding-left: 40px;
+}
+
+.restaurant-page {
+  background: white;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.restaurant-img {
+  animation: image-load ease-out 2s;
+  height: 240px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  z-index: -1;
+}
+
+.restaurant-menu-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #F6F6F6;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  height: auto;
+  margin-top: -40px;
+  max-width: 1106px;
+  padding: 25px 0 40px 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.restaurant-menu-master {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 728px;
+  padding-bottom: 20px;
+  width: 90%;
+}
+
+.title-and-heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 408px;
+  padding: 0 0 20px 5px;
+  width: 95%;
+}
+
+.restaurant-title {
+  color: #101010;
+  font-family: Shrikhand;
+  font-size: 25px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+.fa-heart {
+  font-size: 1.5rem;
+  padding-right: 20px;
+  transition: font-weight, color 0.9s ease-in-out;
+  cursor: pointer;
+}
+.fa-heart:hover {
+  animation: heart-beat ease 1s;
+  animation-iteration-count: 1;
+  color: red;
+  font-weight: 700;
+}
+
+.item-group-container { /** starters/mains/desserts**/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  gap: 10px;
+  height: auto;
+  justify-content: space-between;
+  padding: 10px 0 20px 0;
+  visibility: hidden;
+  width: 100%;
+}
+
+.item-group-container:nth-child(2) {
+  animation: fadeInAnimation ease 0.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+.item-group-container:nth-child(4) {
+  animation: fadeInAnimation ease 0.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-delay: 0.25s;
+}
+
+.item-group-container:nth-child(6) {
+  animation: fadeInAnimation ease 0.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-delay: 0.5s;
+}
+
+.menu-title {
+  align-self: flex-start;
+  border-bottom: 3px solid #99E2D0;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 300;
+  width: 5%;
+}
+
+.item-tick-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  cursor: pointer;
+  width: 100%;
+}
+
+.menu-item {
+  box-shadow: 4px 2px 4px 0 rgba(0, 0, 0, 0.2);
+  background: white;
+  border-radius: 12px;
+  font-family: Roboto;
+  height: 35px;
+  padding: 14px;
+  width: 700px;
+}
+:hover > .menu-item {
+  border-radius: 12px 0 0 12px;
+}
+
+.tick-container {
+  display: none;
+}
+:hover > .tick-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  box-shadow: 4px 2px 4px 0 rgba(0, 0, 0, 0.2);
+  animation: slide-left ease 1s;
+  background: #99E2D0;
+  border-radius: 0 12px 12px 0;
+  font-family: Roboto;
+  height: 35px;
+  padding: 14px;
+}
+
+.tick {
+  animation: rotate ease 1.5s;
+  background: white;
+  border: solid white 1px;
+  border-radius: 100px;
+  color: #99E2D0;
+  height: 20px;
+  padding: 3px 0 0 4px;
+  width: 18px;
+}
+
+.item-name {
+  font-size: 15px;
+  font-weight: bolder;
+  width: 100%;
+}
+
+.description-and-price-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.item-description {
+  font-size: 13px;
+  font-weight: 300;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.price {
+  font-size: 13px;
+  font-weight: bolder;
+}
+
+.order-button-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn {
+  width: 160px;
+}/*# sourceMappingURL=restaurants-page.css.map */
